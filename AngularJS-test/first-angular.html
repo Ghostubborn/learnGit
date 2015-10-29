@@ -1,0 +1,75 @@
+<!doctype html>
+<html ng-app="test-angular"  ng-controller="PhoneListCtrl">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="./js/angular-1.4.1.js"></script>
+    <script src="./js/test-angular-module.js"></script>
+    <title ng-bind-template="search: {{keyword}}">search</title>
+  </head>
+  <body>
+    <fieldset class="test8">
+      <legend>drag an element</legend>
+      <div style="width: 200px; height: 200px; border: 1px solid #000;">
+        <span my-draggable>Drag ME</span>
+      </div>
+    </fieldset>
+    <fieldset class="test7">
+      <legend>ng-class</legend>
+      <ul ng-repeat="i in [1,2,3,4,5,6,7,8]">
+        <li ng-class="{even: !$even, odd: !$odd}">{{i}}</li>
+      </ul>
+    </fieldset>
+    <fieldset class="test6">
+      <legend>custom directive</legend>
+      <my-directive></my-directive>
+      <my-directive></my-directive>
+    </fieldset>
+    <fieldset class="test5">
+      <legend>filter</legend>
+      <form>
+        <input type="number" required ng-maxlength="5" />
+        <input type="submit">
+      </form>
+    </fieldset>
+    <fieldset class="test4">
+      <legend>nested scope</legend>
+      <div ng-controller="TestParentController">
+        <div ng-controller="TestChildController">
+          <a ng-click="sayHello()">say hello</a>
+        </div>
+        {{person}}
+      </div>
+    </fieldset>
+    <fieldset class="test3" ng-controller="ClockDemo">
+      <legend>This is a clock</legend>
+      <span>{{clock}}</span>
+    </fieldset>
+    <fieldset class="test2">
+      <legend>First controller test</legend>
+      <label>search<input type="text" ng-model="keyword"></label>
+      <select ng-model="orderProp">
+        <option value="name">name</option>
+        <option value="type">type</option>
+      </select>
+      <p>{{hello}}, there are {{phones.length}} phone(s).</p>
+      <p>sort:{{orderProp}}</p>
+      <ul>
+        <li ng-repeat="phone in phones | filter:keyword | orderBy:orderProp">
+          <span>{{phone.name}} {{phone.type}}</span>
+        </li>
+      </ul>
+      <table border>
+        <tr><th>row number</th></tr>
+        <tr align="center" ng-repeat="i in [1, 3, 5, 7, 8, 10, 12]">
+          <td>{{i}}</td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset class="test1">
+      <legend>First simple binding</legend>
+      <input type="text" ng-model="name"/>
+      <input type="text" ng-model="name"/>
+      <p>Hello {{name || 'world'}}</p>
+    </fieldset>
+  </body>
+</html>

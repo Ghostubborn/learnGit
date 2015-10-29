@@ -1,0 +1,102 @@
+.item {
+  margin-top: 30px;
+  overflow: hidden;
+  border-bottom: 1px dashed #999;
+}
+.item .sub {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 5px;
+}
+
+.item5 .sub1 {
+  width: 88px;
+  height: 20px;
+}
+.item5 .bg1 {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="88px" height="20px"><circle cx="10" cy="10" r="10" fill="#bdbdbd" /><circle cx="44" cy="10" r="8" fill="#bdbdbd" /><circle cx="76" cy="10" r="8" fill="#bdbdbd" /></svg>');
+}
+.item5 .bg2 {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="88px" height="20px"><circle cx="10" cy="10" r="8" fill="#bdbdbd" /><circle cx="44" cy="10" r="10" fill="#bdbdbd" /><circle cx="76" cy="10" r="8" fill="#bdbdbd" /></svg>');
+}
+.item5 .bg3 {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="88px" height="20px"><circle cx="10" cy="10" r="8" fill="#bdbdbd" /><circle cx="44" cy="10" r="8" fill="#bdbdbd" /><circle cx="76" cy="10" r="10" fill="#bdbdbd" /></svg>');
+}
+
+
+.item4 {
+  height: 200px;
+}
+.item4 .sub {
+  width: 50px;
+  margin: 0 10px 0 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  list-style: none;
+}
+.item4 .sub li {
+  height: 20px;
+  margin-bottom: 5px;
+  line-height: 20px;
+  text-align: center;
+}
+.item4 .sub1-li {
+  background-color: #c9c;
+  cursor: pointer;
+}
+.item4 li.selected {
+  background-color: #ccc;
+}
+
+.item3 {
+  position: relative;
+  height: 200px;
+}
+.item3 .sub1 {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  width: 80px;
+  height: 45px;
+  background-color: #699;
+}
+.item3-resizable-helper {
+  border: 1px dotted #999;
+  background-color: #699;
+  opacity: 0.2;
+}
+
+.item2 {
+  height: 200px;
+}
+.item2 .sub1 {
+  background-color: #fcc;
+}
+.item .sub1-1 {
+  width: 40px;
+  height: 40px;
+  margin: 15px 0 0 10px;
+  background-color: #fee;
+}
+.item2 .sub2 {
+  width: 150px;
+  height: 150px;
+  background-color: #ffc;
+}
+
+.item1 div {
+  background-color: #ccf;
+}
+.item1 .status-size {
+  width: 200px;
+  height: 200px;
+}
+.item1 .status-color {
+  background-color: #ccc;
+}
+.item1 .status-size-and-color {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+}

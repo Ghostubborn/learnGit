@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG</title>
+  </head>
+  <style>
+    .icon-container {
+      overflow: hidden;
+    }
+    .icon-container .icon {
+      float: left;
+      width: 32px;
+      height: 32px;
+    }
+    .answered {
+      background-image: url(answered.svg);
+    }
+    .unanswered {
+      background-image: url(unanswered.svg);
+    }
+    .current {
+      background-image: url(current.svg);
+    }
+    .sprites {
+      width: 32px;
+      height: 32px;
+      background-image: url(svg-sprites.svg);
+      background-position-x: -16px;
+      background-position-y: 0px;
+    }
+  </style>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="88px" height="20px">
+      <circle cx="10" cy="10" r="8" fill="#bdbdbd" />
+      <circle cx="44" cy="10" r="10" fill="#bdbdbd" />
+      <circle cx="76" cy="10" r="8" fill="#bdbdbd" />
+    </svg>
+    <p>embed</p>
+    <div class="icon-container">
+      <embed class="icon" src="unanswered.svg" type="image/svg+xml"/>
+      <embed class="icon" src="answered.svg" type="image/svg+xml"/>
+      <embed class="icon" src="current.svg" type="image/svg+xml"/>
+    </div>
+    <br>
+    <p>object</p>
+    <div class="icon-container">
+      <object class="icon" data="unanswered.svg" type="image/svg+xml"></object>
+      <object class="icon" data="answered.svg" type="image/svg+xml"></object>
+      <object class="icon" data="current.svg" type="image/svg+xml"></object>
+    </div>
+    <br>
+    <p>div</p>
+    <div class="icon-container">
+      <div class="icon unanswered"></div>
+      <div class="icon answered"></div>
+      <div class="icon current"></div>
+    </div>
+    <p>div sprites</p>
+      <div class="sprites">
+    </div>
+  </body>
+</html>
