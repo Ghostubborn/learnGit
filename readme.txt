@@ -6,3 +6,4 @@ Creating a new branch is quick and simple.
 Ghost.Hugh.
 This is dev branch for development and a branch for release will be created soon.
 ...Someone did some jobs...
+test stash.
