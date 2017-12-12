@@ -8,3 +8,5 @@ This is dev branch for development and a branch for release will be created soon
 123
 get ready to test rebase
 Test rebase
+
+Test rebase 3
