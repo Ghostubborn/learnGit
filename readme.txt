@@ -11,3 +11,4 @@ Test rebase
 
 get ready to test rebase again
 Test rebase again
+Test rebase 3
